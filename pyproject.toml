@@ -1,0 +1,20 @@
+[project]
+name = "invitetracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiosqlite>=0.21.0",
+    "audioop-lts>=0.2.1",
+    "mariadb>=1.1.12",
+    "py-cord>=2.6.1",
+    "requests>=2.32.3",
+]
+[tool.ruff.lint]
+select = ["ALL"]
+extend-select = ["ALL"]
+extend-safe-fixes = ["ALL"]
+explicit-preview-rules = true
+preview = true
+extend-ignore = ["D101", "D102", "D107", "D400", "D401"]
